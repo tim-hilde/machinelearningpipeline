@@ -35,7 +35,7 @@ def evaluate(data_path, model_path):
     ## log metrics to MLFLOW
 
     mlflow.log_metric("accuracy", accuracy)
-    print("Model accuracy:{accuracy}")
+    print(f"Model accuracy:{accuracy}")
 
 
 if __name__ == "__main__":
