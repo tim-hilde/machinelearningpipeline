@@ -8,10 +8,10 @@ import yaml
 from sklearn.metrics import accuracy_score
 
 os.environ["MLFLOW_TRACKING_URI"] = (
-    "https://dagshub.com/krishnaik06/machinelearningpipeline.mlflow"
+    "https://dagshub.com/tim-hilde/machinelearningpipeline.mlflow"
 )
-os.environ["MLFLOW_TRACKING_USERNAME"] = "krishnaik06"
-os.environ["MLFLOW_TRACKING_PASSWORD"] = "7104284f1bb44ecee2adb4e36a250ae3251f"
+os.environ["MLFLOW_TRACKING_USERNAME"] = "tim-hilde"
+os.environ["MLFLOW_TRACKING_PASSWORD"] = "8b8b78a74a69c016722c94f713e25b27bfa7fc29"
 
 
 # Load parameters from params.yaml
@@ -24,7 +24,7 @@ def evaluate(data_path, model_path):
     y = data["Outcome"]
 
     mlflow.set_tracking_uri(
-        "https://dagshub.com/krishnaik06/machinelearningpipeline.mlflow"
+        "https://dagshub.com/tim-hilde/machinelearningpipeline.mlflow"
     )
 
     ## load the model from the disk
